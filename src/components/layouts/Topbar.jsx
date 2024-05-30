@@ -9,21 +9,19 @@ import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import GrassIcon from "@mui/icons-material/Grass";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
-import { Padding } from "@mui/icons-material";
 import MobileTopBar from "./MobileTopBar";
 
 const styles = {
   button: {
-    backgroundColor: "mintCream",
-    color: "black",
-    border: "2px solid #4f772d",
-    borderRadius: "25px",
+    backgroundColor: "transparent",
+    color: "white",
+    border: "none",
+    // borderRadius: "25px",
 
-   
     "&:hover": {
-      backgroundColor: "#fff",
-      color: "#4f772d",
-      borderRadius: "25px",
+     
+      color: "#fff",
+      
     },
 
     padding: "6px",
@@ -41,8 +39,8 @@ const Topbar = () => {
           padding: "7px",
           position: "relative",
           // borderRadius: "25px",
-          border: "2px solid mediumSeaGreen",
-          backgroundColor:"mediumaquamarine"
+          // border: "2px solid mediumSeaGreen",
+          backgroundColor:"#132a13"
         }}
       >
         <Box
@@ -51,43 +49,44 @@ const Topbar = () => {
             justifyContent: "space-between",
             opacity: "0.9",
             color: "#fff",
-            borderRadius: "25px",
-            backgroundColor: "mediumaquamarine",
+           
+            backgroundColor: "#132a13",
             textWrap: { xs: "wrap", md: "nowrap" },
             fontSize: { xs: "6px", md: "11px" },
           }}
         >
           <Button variant="outlined" color="success" sx={styles.button}>
             <HomeIcon fontSize="large" />
-            Home
+            होम
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <ContactsIcon fontSize="large" />
-            Introduction
+            परिचय
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <GpsFixedIcon fontSize="large" />
-            Origin
+            उत्पति
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <DonutSmallIcon fontSize="large" />
-            Revival Phase
+            पुनर्जीवन का दौर
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <HistoryEduIcon fontSize="large" />
-            Epilogue
+            उपसंहार
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <GrassIcon fontSize="large" />
-            Horopathy In India
+            होड़ोपैथी भारत में
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <TravelExploreIcon fontSize="large" />
-            Horopathy Outside
+            होड़ोपैथी भारत के बाहर	
+
           </Button>
           <Button variant="outlined" color="success" sx={styles.button}>
             <LocalLibraryIcon fontSize="large" />
-            Publisher
+            प़काशक
           </Button>
         </Box>
       </AppBar>

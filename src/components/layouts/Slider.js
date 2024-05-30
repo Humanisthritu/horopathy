@@ -26,39 +26,39 @@ const SlideMe = () => {
     const imagesOfScenes = [
       {
         original:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.30-pm.jpeg",
+        "https://img.freepik.com/free-photo/natures-beauty-close-up-purple-wildflowers-bloom-generative-ai_188544-8591.jpg",
         thumbnail:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.30-pm.jpeg",
+          "https://img.freepik.com/free-photo/natures-beauty-close-up-purple-wildflowers-bloom-generative-ai_188544-8591.jpg",
       },
       {
         original:
-          "	https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.36-pm.jpeg",
+          "	https://thumbs.dreamstime.com/b/yellow-orange-starburst-flower-nature-jpg-192959431.jpg",
         thumbnail:
-          "	https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.36-pm.jpeg",
+          "	https://thumbs.dreamstime.com/b/yellow-orange-starburst-flower-nature-jpg-192959431.jpg",
       },
       {
         original:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.37-pm.jpeg",
+          "https://static.vecteezy.com/system/resources/previews/030/355/618/large_2x/flowers-in-the-field-mountains-flowers-nature-nature-hd-wallpaper-ai-generated-free-photo.jpg",
         thumbnail:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.37-pm.jpeg",
+          "https://static.vecteezy.com/system/resources/previews/030/355/618/large_2x/flowers-in-the-field-mountains-flowers-nature-nature-hd-wallpaper-ai-generated-free-photo.jpg",
       },
       {
         original:
-          "	https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.52-pm.jpeg",
+          "	https://c1.wallpaperflare.com/preview/8/719/675/plant-gardener-gardening-shop-garden.jpg",
         thumbnail:
-          "	https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.52-pm.jpeg",
+          "	https://c1.wallpaperflare.com/preview/8/719/675/plant-gardener-gardening-shop-garden.jpg",
       },
       {
         original:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.49-pm-1.jpeg",
+          "https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-water-plant-or-aquatic-plant-or-aquatic-weed-image_15686583.jpg",
         thumbnail:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.49-pm-1.jpeg",
+          "https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-water-plant-or-aquatic-plant-or-aquatic-weed-image_15686583.jpg",
       },
       {
         original:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.45-pm.jpeg",
+          "https://cdn.pixabay.com/photo/2023/07/21/22/49/sunflower-bud-8142430_640.jpg",
         thumbnail:
-          "https://cdn.bigboytoyz.com/new-version/products/product/whatsapp-image-2023-09-28-at-1.28.45-pm.jpeg",
+          "https://cdn.pixabay.com/photo/2023/07/21/22/49/sunflower-bud-8142430_640.jpg",
       },
     ];
     setImages(imagesOfScenes);
@@ -73,10 +73,11 @@ const SlideMe = () => {
             <div className="image-gallery-content">
               <ReactImageGallery
                 items={images}
-                // thumbnailPosition='bottom'
+                thumbnailPosition='bottom'
                 showThumbnails={true}
                 autoPlay={false}
                 showPlayButton={false}
+                
               />
               {/* note: we need to add react-image-gallery css link to our css... */}
             </div>

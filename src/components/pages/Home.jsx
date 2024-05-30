@@ -9,10 +9,10 @@ const Home = () => {
   return (
     <div>
     <Topbar/>
-    <Paper  style={{width:"auto" , marginTop:"15px" ,backgroundColor: "transparent" , borderRadius:"25px" , position:"relative" , border:'6px solid mediumSeaGreen'}}>
+    <Paper  style={{width:"auto"   ,backgroundColor: "#606c38"  , position:"relative" }}>
     <SlideMe />
     </Paper>
-    <Paper  style={{width:"auto" , marginTop:"15px" ,backgroundColor: "transparent" , borderRadius:"25px" , position:"relative" , border:'6px solid mediumSeaGreen' , display:"flex" , justifyContent:"center"}}>
+    <Paper  style={{width:"auto" ,backgroundColor: "#bcbd8b"  , position:"relative" , display:"flex" , justifyContent:"center"}}>
      <BookStructure/>
     </Paper>
    

@@ -10,20 +10,22 @@
     .left-section{
         flex: 3;
         .image-gallery-content {
-            border: 1px solid grey;
+             border: 5px solid #132a13;
+            border-radius: 25px;
         }
     
         .image-gallery-slide img {
             width: 100%;
             height: 450px;
-            /* max-height: 80vh; */
-            object-fit: contain;
+             max-height: 80vh; 
+            object-fit: cover;
             overflow: hidden;
             object-position: center center;
         }
     
         .image-gallery-slide-wrapper {
-            background-color: black;
+            background-color: #f2e9e4;
+          
         }
     
         .fullscreen .image-gallery-slide img {
