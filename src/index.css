@@ -1,8 +1,10 @@
 @import "./components/Style/book.scss";
+@import "./components/Style/_slideShow.scss";
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 *{
   margin: 0px;
-  padding: 7px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif
 }

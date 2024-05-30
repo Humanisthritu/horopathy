@@ -40,7 +40,7 @@ const Topbar = () => {
           display: { xs: "none", sm: "none", md: "flex" },
           padding: "7px",
           position: "relative",
-          borderRadius: "25px",
+          // borderRadius: "25px",
           border: "2px solid mediumSeaGreen",
           backgroundColor:"mediumaquamarine"
         }}
@@ -52,7 +52,7 @@ const Topbar = () => {
             opacity: "0.9",
             color: "#fff",
             borderRadius: "25px",
-            backgroundColor: "#132a13",
+            backgroundColor: "mediumaquamarine",
             textWrap: { xs: "wrap", md: "nowrap" },
             fontSize: { xs: "6px", md: "11px" },
           }}
