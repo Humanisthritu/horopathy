@@ -12,8 +12,8 @@ const Home = () => {
     <Paper  style={{width:"auto"   ,backgroundColor: "#606c38"  , position:"relative" }}>
     <SlideMe />
     </Paper>
-    <Paper  style={{width:"auto" ,backgroundColor: "#bcbd8b"  , position:"relative" , display:"flex" , justifyContent:"center"}}>
-     <BookStructure/>
+    <Paper  style={{width:"auto" ,backgroundColor: "#bcbd8b"  , position:"relative" , display:"grid" , justifyContent:"center"}}>
+     <BookStructure defer/>
     </Paper>
    
 
