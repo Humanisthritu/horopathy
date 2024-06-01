@@ -10,6 +10,7 @@ import GrassIcon from "@mui/icons-material/Grass";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import MobileTopBar from "./MobileTopBar";
+import { Link } from "react-router-dom";
 
 const styles = {
   button: {
@@ -55,39 +56,65 @@ const Topbar = () => {
             fontSize: { xs: "6px", md: "11px" },
           }}
         >
-          <Button variant="outlined" color="success" sx={styles.button}>
+        <Link to="/">
+        <Button variant="outlined" color="success" sx={styles.button}>
             <HomeIcon fontSize="large" />
             होम
           </Button>
+        </Link>
+          
+        <Link to="introduction">
           <Button variant="outlined" color="success" sx={styles.button}>
             <ContactsIcon fontSize="large" />
             परिचय
           </Button>
+          </Link>
+
+          <Link to="origin">
           <Button variant="outlined" color="success" sx={styles.button}>
             <GpsFixedIcon fontSize="large" />
             उत्पति
           </Button>
+          </Link>
+
+          <Link to="revival">
           <Button variant="outlined" color="success" sx={styles.button}>
             <DonutSmallIcon fontSize="large" />
             पुनर्जीवन का दौर
           </Button>
+          </Link>
+          
+          <Link to="epilogue">
           <Button variant="outlined" color="success" sx={styles.button}>
             <HistoryEduIcon fontSize="large" />
             उपसंहार
           </Button>
+          </Link>
+         
+            
+          <Link to="horopathyInIndia">
           <Button variant="outlined" color="success" sx={styles.button}>
             <GrassIcon fontSize="large" />
             होड़ोपैथी भारत में
           </Button>
+          </Link>
+         
+
+          <Link to="horopathyOutside">
           <Button variant="outlined" color="success" sx={styles.button}>
             <TravelExploreIcon fontSize="large" />
             होड़ोपैथी भारत के बाहर	
 
           </Button>
+          </Link>
+          
+          <Link to="publisher">
           <Button variant="outlined" color="success" sx={styles.button}>
             <LocalLibraryIcon fontSize="large" />
             प़काशक
           </Button>
+          </Link>
+         
         </Box>
       </AppBar>
 
