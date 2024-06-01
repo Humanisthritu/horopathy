@@ -75,7 +75,7 @@ const SlideMe = () => {
                 items={images}
                 thumbnailPosition='bottom'
                 showThumbnails={true}
-                autoPlay={false}
+                autoPlay={true}
                 showPlayButton={false}
                 
               />

@@ -111,7 +111,23 @@ const BookStructure = () => {
   }
 
   return (
-    <>
+    <> 
+
+    <Box sx={{display:{md:"flex",xs:"none"} , alignItems :'center' , justifyContent:"space-between"}}>
+
+    <Button
+          variant="contained"
+          sx={{
+            backgroundColor: "#606c38",
+            "&:hover": { backgroundColor: "#dad7cd", color: "black" },
+            position:"relative"
+          }}
+          id="prev-btn"
+          onClick={() => goPrevPage()}
+        >
+          <KeyboardDoubleArrowLeftIcon fontSize="large" />
+        </Button>
+      
       <Box id="book" className="book">
         {/* paper 1 */}
         <Box id="p1" className="paper">
@@ -122,7 +138,7 @@ const BookStructure = () => {
                   <>
                     <h1
                       style={{
-                        fontSize: "1.5rem",
+                        fontSize: "16.5px",
                         display: "grid",
                         justifyContent: "center",
                         padding: "3px",
@@ -134,12 +150,12 @@ const BookStructure = () => {
                       style={{
                         display: "flex",
                         justifyContent: "center",
-                        fontSize: "17px",
+                        fontSize: "11.5px",
                       }}
                     >
                       {item.subHeader}
                     </h4>
-                    <h6 style={{ display: "flex", justifyContent: "center" }}>
+                    <h6 style={{ display: "flex", justifyContent: "center",fontSize: "10px", }}>
                       {item.author}
                     </h6>
                     <h6
@@ -147,7 +163,7 @@ const BookStructure = () => {
                         display: "flex",
                         justifyContent: "center",
                         margin: "20px 30px 13px 30px",
-                        fontSize: "14px",
+                        fontSize: "10px",
                         textAlign: "justify",
                         textJustify: "inter-word",
                       }}
@@ -159,7 +175,7 @@ const BookStructure = () => {
                         display: "flex",
                         justifyContent: "center",
                         margin: "13px 30px 13px 30px",
-                        fontSize: "14px",
+                        fontSize: "10px",
                         textAlign: "justify",
                         textJustify: "inter-word",
                       }}
@@ -171,7 +187,7 @@ const BookStructure = () => {
                         display: "flex",
                         justifyContent: "center",
                         margin: "13px 30px 13px 30px",
-                        fontSize: "14px",
+                        fontSize: "10px",
                         textAlign: "justify",
                         textJustify: "inter-word",
                       }}
@@ -233,37 +249,24 @@ const BookStructure = () => {
           </Box>
         </Box>
       </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          placeItems: "center",
-          position: "inherit",
-        }}
-      >
-        <Button
-          variant="contained"
-          sx={{
-            backgroundColor: "#606c38",
-            "&:hover": { backgroundColor: "#dad7cd", color: "black" },
-          }}
-          id="prev-btn"
-          onClick={() => goPrevPage()}
-        >
-          <KeyboardDoubleArrowLeftIcon fontSize="large" />
-        </Button>
-        <Button
+
+      <Button
           variant="contained"
           id="next-btn"
           sx={{
             backgroundColor: "#606c38",
             "&:hover": { backgroundColor: "#dad7cd", color: "black" },
+            position:"relative"
           }}
           onClick={() => goNextPage()}
         >
           <KeyboardDoubleArrowRightIcon fontSize="large" />
         </Button>
-      </Box>
+
+    </Box>
+  
+       
+      
     </>
   );
 };
