@@ -85,7 +85,8 @@ const MobileTopBar = () => {
 
   const DrawerList = () => (
     <Box
-      sx={{ width: 250, background: "#606c38" , borderRadius:"14px" , height:"100vh" }}
+      sx={{ width: 250, background: "#606c38"  , height:"100vh",
+     }}
       role="presentation"
       onClick={() => toggleDrawer(false)}
     >

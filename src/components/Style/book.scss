@@ -7,7 +7,6 @@
     position: relative;
     width: 400px;
     height: 530px;
-   
     transition: transform 0.5s;
     
     .paper {
@@ -82,12 +81,5 @@
         z-index: 1;
     }
 
-    @media (max-width: 760px) {
-      .book {
-        
-        position: relative;
-        width: 400px;
-        height: 530px;
-       
-    }
-  }
+    
+    
