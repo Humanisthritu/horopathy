@@ -87,7 +87,7 @@ const Topbar = () => {
           <Link to="epilogue">
           <Button variant="outlined" color="success" sx={styles.button}>
             <HistoryEduIcon fontSize="large" />
-            "Epilogue"
+            Epilogue
           </Button>
           </Link>
          
