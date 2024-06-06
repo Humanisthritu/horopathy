@@ -59,59 +59,59 @@ const Topbar = () => {
         <Link to="/">
         <Button variant="outlined" color="success" sx={styles.button}>
             <HomeIcon fontSize="large" />
-            होम
+            Home
           </Button>
         </Link>
           
         <Link to="introduction">
           <Button variant="outlined" color="success" sx={styles.button}>
             <ContactsIcon fontSize="large" />
-            परिचय
+            Introduction
           </Button>
           </Link>
 
           <Link to="origin">
-          <Button variant="outlined" color="success" sx={styles.button}>
+          <Button variant="outlined" color="success" sx={styles.button} >
             <GpsFixedIcon fontSize="large" />
-            उत्पति
+            Origin
           </Button>
           </Link>
 
           <Link to="revival">
           <Button variant="outlined" color="success" sx={styles.button}>
             <DonutSmallIcon fontSize="large" />
-            पुनर्जीवन का दौर
+            Revival Phase
           </Button>
           </Link>
           
           <Link to="epilogue">
           <Button variant="outlined" color="success" sx={styles.button}>
             <HistoryEduIcon fontSize="large" />
-            उपसंहार
+            "Epilogue"
           </Button>
           </Link>
          
             
           <Link to="horopathyInIndia">
-          <Button variant="outlined" color="success" sx={styles.button}>
+          <Button variant="outlined" color="success" sx={styles.button} >
             <GrassIcon fontSize="large" />
-            होड़ोपैथी भारत में
+            Horopathy India
           </Button>
           </Link>
          
 
           <Link to="horopathyOutside">
-          <Button variant="outlined" color="success" sx={styles.button}>
+          <Button variant="outlined" color="success" sx={styles.button} >
             <TravelExploreIcon fontSize="large" />
-            होड़ोपैथी भारत के बाहर	
+            Horopathy Outside
 
           </Button>
           </Link>
           
           <Link to="publisher">
-          <Button variant="outlined" color="success" sx={styles.button}>
+          <Button variant="outlined" color="success" sx={styles.button} >
             <LocalLibraryIcon fontSize="large" />
-            प़काशक
+            Publisher
           </Button>
           </Link>
          

@@ -16,13 +16,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route index element={<Home />} />
-          <Route path="introduction" element={<Introduction />} />
+          {/* <Route path="introduction" element={<Introduction />} />
           <Route path="origin" element={<Origin />} />
           <Route path="revival" element={<RevivalPhase />} />
           <Route path="epilogue" element={<Epilogue />} />
           <Route path="horopathyInIndia" element={<HoroPathyIndia />} />
           <Route path="horopathyOutside" element={<HoropathyOutside />} />
-          <Route path="publisher" element={<Publisher />} />
+          <Route path="publisher" element={<Publisher />} /> */}
         </Routes>
       </BrowserRouter>
     </>

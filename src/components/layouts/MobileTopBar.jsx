@@ -22,7 +22,7 @@ const MobileTopBar = () => {
     button: {
       backgroundColor: "transparent",
       color: "#fff",
-      border: "2px solid mediumaquamarine",
+      border: "2px solid #606c38",
       borderRadius: "25px",
       width:"100%",
       display:"flex",
@@ -33,7 +33,7 @@ const MobileTopBar = () => {
         borderRadius: "25px",
       },
 
-      padding: "6px",
+      padding: "20px",
     },
     icon: {
       fontSize: "2.1rem",
@@ -85,7 +85,7 @@ const MobileTopBar = () => {
 
   const DrawerList = () => (
     <Box
-      sx={{ width: 250, background: "mediumSeaGreen" , borderRadius:"14px" , height:"100vh" }}
+      sx={{ width: 250, background: "#606c38" , borderRadius:"14px" , height:"100vh" }}
       role="presentation"
       onClick={() => toggleDrawer(false)}
     >
@@ -97,7 +97,7 @@ const MobileTopBar = () => {
                 {item.icon}
                 {item.title}
               </Button>
-              <Divider />
+              <Divider sx={{backgroundColor:'white'}} />
             </article>
           </>
         );
