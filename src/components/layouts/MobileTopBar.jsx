@@ -53,7 +53,7 @@ const MobileTopBar = () => {
     },
     {
       id: 3,
-      title: "origin",
+      title: "Origin",
       icon: <GpsFixedIcon sx={styles.icon} />,
     },
     {
