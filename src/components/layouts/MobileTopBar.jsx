@@ -68,12 +68,12 @@ const MobileTopBar = () => {
     },
     {
       id: 6,
-      title: "Horopathy India",
+      title: "Hodopathy India",
       icon: <GrassIcon sx={styles.icon} />,
     },
     {
       id: 7,
-      title: "Horopathy Outside",
+      title: "Hodopathy Outside",
       icon: <TravelExploreIcon sx={styles.icon} />,
     },
     {

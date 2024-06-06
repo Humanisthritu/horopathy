@@ -95,7 +95,7 @@ const Topbar = () => {
           <Link to="horopathyInIndia">
           <Button variant="outlined" color="success" sx={styles.button} >
             <GrassIcon fontSize="large" />
-            Horopathy India
+            Hodopathy India
           </Button>
           </Link>
          
@@ -103,7 +103,7 @@ const Topbar = () => {
           <Link to="horopathyOutside">
           <Button variant="outlined" color="success" sx={styles.button} >
             <TravelExploreIcon fontSize="large" />
-            Horopathy Outside
+            Hodopathy Outside
 
           </Button>
           </Link>
