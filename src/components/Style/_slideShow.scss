@@ -48,14 +48,22 @@
             max-height: 100vh;
         }
 
-        .image-gallery-slide,
-        .image-gallery-description {
+        .image-gallery-slide{
             border: 1px solid rgb(0, 0, 0);
-           
+            align-items: center;
             bottom: 70px;
-            color: #000000;
+            color: #fff;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
            
+        }
+
+        .image-gallery-description{
+            color: #fff;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 0;
         }
 
         .image-gallery-thumbnail {

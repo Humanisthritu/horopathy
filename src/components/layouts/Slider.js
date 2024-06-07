@@ -1,23 +1,8 @@
+import { Paper } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 
-const MyCollection = [
-  {
-    label: "First Picture",
-    imgPath:
-      "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg",
-  },
-  {
-    label: "Second Picture",
-    imgPath:
-      "https://gallery.yopriceville.com/var/albums/Nature/Forest_Trail_Landscape_Wallpaper.jpg",
-  },
-  {
-    label: "Third Picture",
-    imgPath:
-      "https://onlinejpgtools.com/images/examples-onlinejpgtools/sunflower.jpg",
-  },
-];
+
 
 const SlideMe = () => {
   const [images, setImages] = useState([]);
@@ -26,9 +11,12 @@ const SlideMe = () => {
     const imagesOfScenes = [
       {
         original:
-        "https://img.freepik.com/free-photo/natures-beauty-close-up-purple-wildflowers-bloom-generative-ai_188544-8591.jpg",
+        "https://cdn.pixabay.com/photo/2017/02/15/08/27/magenta-flower-2067917_1280.jpg",
         thumbnail:
-          "https://img.freepik.com/free-photo/natures-beauty-close-up-purple-wildflowers-bloom-generative-ai_188544-8591.jpg",
+          "https://cdn.pixabay.com/photo/2017/02/15/08/27/magenta-flower-2067917_1280.jpg",
+        description: "Kachnar",
+      
+         
       },
       {
         original:
@@ -75,13 +63,15 @@ const SlideMe = () => {
                 items={images}
                 thumbnailPosition='bottom'
                 showThumbnails={true}
-                autoPlay={true}
-                showPlayButton={false}
-                
+                autoPlay={false}
+                showPlayButton={false} 
+                showNav={true}      
               />
               {/* note: we need to add react-image-gallery css link to our css... */}
             </div>
           )}
+
+         
         </div>
       </div>
     </>
