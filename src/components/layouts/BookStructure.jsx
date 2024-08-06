@@ -111,162 +111,170 @@ const BookStructure = () => {
   }
 
   return (
-    <> 
-
-    <Box sx={{display:{md:"flex",xs:"none"} , alignItems :'center' , justifyContent:"space-between"}}>
-
-    <Button
+    <>
+      <Box
+        sx={{
+          display: { md: "flex", xs: "none" },
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <Button
           variant="contained"
           sx={{
             backgroundColor: "#606c38",
             "&:hover": { backgroundColor: "#dad7cd", color: "black" },
-            position:"relative"
+            position: "relative",
+            marginRight: "2rem",
           }}
           id="prev-btn"
           onClick={() => goPrevPage()}
         >
           <KeyboardDoubleArrowLeftIcon fontSize="large" />
         </Button>
-      
-      <Box id="book" className="book">
-        {/* paper 1 */}
-        <Box id="p1" className="paper">
-          <Box className="front">
-            <Box id="f1" class="front-content">
-              {data.map((item) => {
-                return (
-                  <>
-                    <h1
-                      style={{
-                        fontSize: "16.5px",
-                        display: "grid",
-                        justifyContent: "center",
-                        padding: "3px",
-                      }}
-                    >
-                      {item.header}
-                    </h1>
-                    <h4
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        fontSize: "11.5px",
-                      }}
-                    >
-                      {item.subHeader}
-                    </h4>
-                    <h6 style={{ display: "flex", justifyContent: "center",fontSize: "10px", }}>
-                      {item.author}
-                    </h6>
-                    <h6
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        margin: "20px 30px 13px 30px",
-                        fontSize: "10px",
-                        textAlign: "justify",
-                        textJustify: "inter-word",
-                      }}
-                    >
-                      {item.detailsOne}
-                    </h6>
-                    <h6
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        margin: "13px 30px 13px 30px",
-                        fontSize: "10px",
-                        textAlign: "justify",
-                        textJustify: "inter-word",
-                      }}
-                    >
-                      {item.detailsSecond}
-                    </h6>
-                    <h6
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        margin: "13px 30px 13px 30px",
-                        fontSize: "10px",
-                        textAlign: "justify",
-                        textJustify: "inter-word",
-                      }}
-                    >
-                      {item.detailsThree}
-                    </h6>
-                  </>
-                );
-              })}
-            </Box>
-          </Box>
-          <Box className="back">
-            <Box id="b1" class="back-content">
-              {data.map((item) => {
-                return (
-                  <>
-                    <h1
-                      style={{
-                        fontSize: "1.5rem",
-                        display: "grid",
-                        justifyContent: "center",
-                        padding: "3px",
-                      }}
-                    >
-                      {item.header}
-                    </h1>
-                    {/* <h4 style={{display:'grid' , justifyContent:'center', padding:'3px' }}>{item.subHeader}</h4>
-                  <h6 style={{display:'grid' , justifyContent:'center', padding:'3px' }}>{item.author}</h6> */}
-                  </>
-                );
-              })}
-            </Box>
-          </Box>
-        </Box>
-        {/* paper 2 */}
-        <Box id="p2" className="paper">
-          <Box className="front">
-            <Box id="f2" class="front-content">
-              <h1>Front 2</h1>
-            </Box>
-          </Box>
-          <Box className="back">
-            <Box id="b2" class="back-content">
-              <h1>Back 2</h1>
-            </Box>
-          </Box>
-        </Box>
-        {/* paper 3 */}
-        <Box id="p3" className="paper ">
-          <Box className="front">
-            <Box id="f3" class="front-content">
-              <h1>Front 3</h1>
-            </Box>
-          </Box>
-          <Box className="back">
-            <Box id="b3" class="back-content">
-              <h1>Back 3</h1>
-            </Box>
-          </Box>
-        </Box>
-      </Box>
 
-      <Button
+        <Box id="book" className="book">
+          {/* paper 1 */}
+          <Box id="p1" className="paper">
+            <Box className="front">
+              <Box id="f1" class="front-content">
+                {data.map((item) => {
+                  return (
+                    <>
+                      <h1
+                        style={{
+                          fontSize: "16.5px",
+                          display: "grid",
+                          justifyContent: "center",
+                          padding: "3px",
+                        }}
+                      >
+                        {item.header}
+                      </h1>
+                      <h4
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          fontSize: "11.5px",
+                        }}
+                      >
+                        {item.subHeader}
+                      </h4>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          fontSize: "10px",
+                        }}
+                      >
+                        {item.author}
+                      </h6>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          margin: "20px 30px 13px 30px",
+                          fontSize: "10px",
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                      >
+                        {item.detailsOne}
+                      </h6>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          margin: "13px 30px 13px 30px",
+                          fontSize: "10px",
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                      >
+                        {item.detailsSecond}
+                      </h6>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          margin: "13px 30px 13px 30px",
+                          fontSize: "10px",
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                      >
+                        {item.detailsThree}
+                      </h6>
+                    </>
+                  );
+                })}
+              </Box>
+            </Box>
+            <Box className="back">
+              <Box id="b1" class="back-content">
+                {data.map((item) => {
+                  return (
+                    <>
+                      <h1
+                        style={{
+                          fontSize: "1.5rem",
+                          display: "grid",
+                          justifyContent: "center",
+                          padding: "3px",
+                        }}
+                      >
+                        {/* {item.header} */}
+                      </h1>
+                      {/* <h4 style={{display:'grid' , justifyContent:'center', padding:'3px' }}>{item.subHeader}</h4>
+                  <h6 style={{display:'grid' , justifyContent:'center', padding:'3px' }}>{item.author}</h6> */}
+                    </>
+                  );
+                })}
+              </Box>
+            </Box>
+          </Box>
+          {/* paper 2 */}
+          <Box id="p2" className="paper">
+            <Box className="front">
+              <Box id="f2" class="front-content">
+                {/* <h1>Front 2</h1> */}
+              </Box>
+            </Box>
+            <Box className="back">
+              <Box id="b2" class="back-content">
+                {/* <h1>Back 2</h1> */}
+              </Box>
+            </Box>
+          </Box>
+          {/* paper 3 */}
+          <Box id="p3" className="paper ">
+            <Box className="front">
+              <Box id="f3" class="front-content">
+                {/* <h1>Front 3</h1> */}
+              </Box>
+            </Box>
+            <Box className="back">
+              <Box id="b3" class="back-content">
+                {/* <h1>Back 3</h1> */}
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+
+        <Button
           variant="contained"
           id="next-btn"
           sx={{
             backgroundColor: "#606c38",
             "&:hover": { backgroundColor: "#dad7cd", color: "black" },
-            position:"relative"
+            position: "relative",
+            marginLeft: "2rem",
           }}
           onClick={() => goNextPage()}
         >
           <KeyboardDoubleArrowRightIcon fontSize="large" />
         </Button>
-
-    </Box>
-  
-       
-      
+      </Box>
     </>
   );
 };

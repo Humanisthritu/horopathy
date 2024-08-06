@@ -24,9 +24,9 @@ const MobileTopBar = () => {
       color: "#fff",
       border: "2px solid #606c38",
       borderRadius: "25px",
-      width:"100%",
-      display:"flex",
-      justifyContent:"left" , 
+      width: "100%",
+      display: "flex",
+      justifyContent: "left",
       "&:hover": {
         backgroundColor: "mintCream",
         color: "#4f772d",
@@ -85,8 +85,7 @@ const MobileTopBar = () => {
 
   const DrawerList = () => (
     <Box
-      sx={{ width: 250, background: "#606c38"  , height:"100vh",
-     }}
+      sx={{ width: 250, background: "#606c38", height: "100vh" }}
       role="presentation"
       onClick={() => toggleDrawer(false)}
     >
@@ -98,7 +97,7 @@ const MobileTopBar = () => {
                 {item.icon}
                 {item.title}
               </Button>
-              <Divider sx={{backgroundColor:'white'}} />
+              <Divider sx={{ backgroundColor: "white" }} />
             </article>
           </>
         );

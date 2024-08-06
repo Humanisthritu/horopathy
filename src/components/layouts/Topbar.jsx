@@ -20,13 +20,10 @@ const styles = {
     // borderRadius: "25px",
 
     "&:hover": {
-     
       color: "#fff",
-      
     },
 
     padding: "6px",
-    
   },
 };
 
@@ -41,50 +38,66 @@ const Topbar = () => {
           position: "relative",
           // borderRadius: "25px",
           // border: "2px solid mediumSeaGreen",
-          backgroundColor:"#132a13"
+          backgroundColor: "#132a13",
         }}
       >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "left",
+            gap: "3rem",
             opacity: "0.9",
             color: "#fff",
-           
+
             backgroundColor: "#132a13",
             textWrap: { xs: "wrap", md: "nowrap" },
             fontSize: { xs: "6px", md: "11px" },
           }}
         >
-        <Link to="/">
-        <Button variant="outlined" color="success" sx={styles.button}>
-            <HomeIcon fontSize="large" />
-            Home
-          </Button>
-        </Link>
-          
-        <Link to="introduction">
-          <Button variant="outlined" color="success" sx={styles.button}>
-            <ContactsIcon fontSize="large" />
-            Introduction
-          </Button>
+          <Link to="/">
+            <Button variant="outlined" color="success" sx={styles.button}>
+              <HomeIcon fontSize="large" />
+              Home
+            </Button>
           </Link>
 
-          <Link to="origin">
-          <Button variant="outlined" color="success" sx={styles.button} >
-            <GpsFixedIcon fontSize="large" />
-            Origin
-          </Button>
-          </Link>
+          {/* <Link to="introduction">
+            <Button
+              variant="outlined"
+              color="success"
+              sx={styles.button}
+              disabled
+            >
+              <ContactsIcon fontSize="large" />
+              About
+            </Button>
+          </Link> */}
 
-          <Link to="revival">
-          <Button variant="outlined" color="success" sx={styles.button}>
-            <DonutSmallIcon fontSize="large" />
-            Revival Phase
-          </Button>
-          </Link>
-          
-          <Link to="epilogue">
+          {/* <Link to="origin">
+            <Button
+              variant="outlined"
+              color="success"
+              sx={styles.button}
+              disabled
+            >
+              <GpsFixedIcon fontSize="large" />
+              Gallery
+            </Button>
+          </Link> */}
+
+          {/* <Link to="revival">
+            <Button
+              variant="outlined"
+              color="success"
+              sx={styles.button}
+              disabled
+            >
+              <DonutSmallIcon fontSize="large" />
+              Contact
+            </Button>
+          </Link> */}
+
+          {/* <Link to="epilogue">
           <Button variant="outlined" color="success" sx={styles.button}>
             <HistoryEduIcon fontSize="large" />
             Epilogue
@@ -113,16 +126,12 @@ const Topbar = () => {
             <LocalLibraryIcon fontSize="large" />
             Publisher
           </Button>
-          </Link>
-         
+          </Link> */}
         </Box>
       </AppBar>
 
       {/* Mobile view tobar */}
-      <MobileTopBar/>
-      
-
-
+      <MobileTopBar />
     </>
   );
 };

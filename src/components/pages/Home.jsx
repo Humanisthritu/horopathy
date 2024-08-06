@@ -1,25 +1,39 @@
-import React from 'react'
-import Topbar from '../layouts/Topbar'
-import SlideMe from '../layouts/Slider'
-import { Paper } from '@mui/material'
-import { Book } from '@mui/icons-material'
-import BookStructure from '../layouts/BookStructure'
+import React from "react";
+import Topbar from "../layouts/Topbar";
+import SlideMe from "../layouts/Slider";
+import { Box, Paper } from "@mui/material";
+
+import DropdownBook from "../layouts/DropdownBook";
 
 const Home = () => {
   return (
     <div>
-    <Topbar/>
-    <Paper  style={{width:"auto"   ,backgroundColor: "#606c38"  , position:"relative" }}>
-    <SlideMe />
-    </Paper>
-    <Paper  style={{width:"auto" ,backgroundColor: "#bcbd8b"  , position:"relative" , display:"grid" , justifyContent:"center"}}>
-     <BookStructure defer/>
-    </Paper>
-   
+      <Topbar />
+      <Paper
+        style={{
+          width: "auto",
+          backgroundColor: "#606c38",
+          position: "relative",
+        }}
+      >
+        <SlideMe />
+      </Paper>
 
-    {/* <h1 >Home</h1> */}
+      <Paper
+        style={{
+          width: "auto",
+          backgroundColor: "#bcbd8b",
+          position: "relative",
+          display: "grid",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <DropdownBook />
+      </Paper>
+
+      {/* <h1 >Home</h1> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
