@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
@@ -127,6 +127,7 @@ const BookStructure = () => {
             position: "relative",
             marginRight: "2rem",
           }}
+          disabled
           id="prev-btn"
           onClick={() => goPrevPage()}
         >
@@ -264,6 +265,7 @@ const BookStructure = () => {
         <Button
           variant="contained"
           id="next-btn"
+          disabled
           sx={{
             backgroundColor: "#606c38",
             "&:hover": { backgroundColor: "#dad7cd", color: "black" },
@@ -274,6 +276,85 @@ const BookStructure = () => {
         >
           <KeyboardDoubleArrowRightIcon fontSize="large" />
         </Button>
+      </Box>
+
+      <Box 
+      sx={{display: {md: 'none', xs: 'grid', sm:'none'}}}>
+      <Box>
+      {data.map((item) => {
+                  return (
+                    <>
+                    <Box sx={{background:'#f0f3bd' , padding:'12px', margin:'9px'}}>
+                    <h1
+                        style={{
+                          fontSize: "15.5px",
+                          display: "grid",
+                          justifyContent: "center",
+                          padding: "3px",
+                        }}
+                      >
+                        {item.header}
+                      </h1>
+                      <h4
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          fontSize: "11.5px",
+                        }}
+                      >
+                        {item.subHeader}
+                      </h4>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          fontSize: "10px",
+                        }}
+                      >
+                        {item.author}
+                      </h6>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          margin: "20px 30px 13px 30px",
+                          fontSize: "10px",
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                      >
+                        {item.detailsOne}
+                      </h6>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          margin: "13px 30px 13px 30px",
+                          fontSize: "10px",
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                      >
+                        {item.detailsSecond}
+                      </h6>
+                      <h6
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          margin: "13px 30px 13px 30px",
+                          fontSize: "10px",
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                      >
+                        {item.detailsThree}
+                      </h6>
+                    </Box>
+                     
+                    </>
+                  );
+                })}
+      </Box>
       </Box>
     </>
   );

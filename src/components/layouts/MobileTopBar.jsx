@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Drawer } from "@mui/material";
+import { Box, Button, Divider, Drawer, Typography } from "@mui/material";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
@@ -9,7 +9,7 @@ import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
 import GrassIcon from "@mui/icons-material/Grass";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
-import { Opacity } from "@mui/icons-material";
+
 
 const MobileTopBar = () => {
   const [open, setOpen] = useState(false);
@@ -107,11 +107,14 @@ const MobileTopBar = () => {
 
   return (
     <Box sx={{ display: { xs: "block", md: "none" } }}>
-      <Button onClick={() => toggleDrawer(true)} sx={{ color: "#fff" }}>
-        <MenuIcon fontSize="large" />
+     <Box sx={{display:"flex" , justifyContent:"space-between", width: '100%', alignItems:'center',}}>
+      <Button onClick={() => toggleDrawer(true)} sx={{ color: "#fff"}}>
+        <MenuIcon fontSize="large" sx={{visibility:'hidden',}} />
       </Button>
+       <Typography variant="body1" sx={{marginRight:"10px", color:'#fff'}}>HOROPATHY</Typography>
+      </Box>
       <Drawer open={open} onClose={() => toggleDrawer(false)}>
-        {DrawerList()}
+        {/* {DrawerList()} */}
       </Drawer>
     </Box>
   );
